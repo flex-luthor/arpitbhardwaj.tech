@@ -99,6 +99,24 @@
   cursor: pointer;
 }
 
+.ai-item-icon {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.ai-input-heading {
+  display: flex;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom-color: #ffffff22;
+  border-bottom-width: 1px;
+}
+
+.ai-input-icon {
+  margin-right: 6px;
+}
+
 .toolbar-button {
   background-color: #1f2937;
   opacity: 0.7;

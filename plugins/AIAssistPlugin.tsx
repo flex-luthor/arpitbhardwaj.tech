@@ -75,7 +75,7 @@ function AIMenuItem({
         width={16}
         height={16}
         alt="ai"
-        style={{ marginRight: 8, marginLeft: 8 }}
+        className="ai-item-icon"
       />
       <span className="text">{option.name + "..."}</span>
     </li>
@@ -245,23 +245,13 @@ export default function AIAssistPlugin() {
         anchorElementRef
           ? ReactDOM.createPortal(
               <div className="ai-input">
-                <div
-                  style={{
-                    display: "flex",
-                    paddingLeft: 8,
-                    paddingTop: 8,
-                    paddingBottom: 8,
-                    borderColor: "black",
-                    borderBottomWidth: 1,
-                    borderBottomColor: "#ffffff22",
-                  }}
-                >
+                <div className="ai-input-heading">
                   <Image
                     src="/ask-icon.svg"
                     width={16}
                     height={16}
                     alt="ask"
-                    style={{ marginRight: 6 }}
+                    className="ai-input-icon"
                   />
                   Ask AI to write anything
                 </div>
