@@ -1,4 +1,9 @@
-import { $createParagraphNode, $getRoot, $getSelection } from "lexical";
+import {
+  $createParagraphNode,
+  $createTextNode,
+  $getRoot,
+  $getSelection,
+} from "lexical";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
@@ -13,6 +18,7 @@ import CommandsPlugin from "@/plugins/CommandsPlugin";
 import HeadingPlugin from "@/plugins/HeadingPlugin";
 import { ClearEditorPlugin } from "@lexical/react/LexicalClearEditorPlugin";
 import ToolbarPlugin from "@/plugins/ToolbarPlugin";
+import { $createLinkNode } from "@lexical/link";
 
 const theme = {
   heading: {
@@ -74,8 +80,8 @@ export default function Editor() {
         <HistoryPlugin />
         <AIAssistPlugin />
         <CommandsPlugin />
-        <ClearEditorPlugin />
         <ToolbarPlugin />
+        <ClearEditorPlugin />
       </div>
     </LexicalComposer>
   );

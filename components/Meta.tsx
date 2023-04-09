@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-export const Meta = ({ title = "Writesonic Assignment" }) => {
+export const Meta = ({ title = "Arpit Bhardwaj" }) => {
   return (
     <Head>
       <title>{title}</title>
