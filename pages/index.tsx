@@ -8,7 +8,7 @@ export default function Home() {
       </div>
       <div className="bg-gray-900/50 text-white w-full max-w-[800px] p-8 rounded-xl mt-8">
         <div className="mb-8 text-4xl font-bold text-center text-blue-500/80">
-          🚧 Portfolio Under Construction 🚨
+          🚧 Portfolio Under Development 🚨
         </div>
         <div className="grid grid-cols-2">
           <a
