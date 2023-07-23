@@ -12,7 +12,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2">
           <a
-            href="https://drive.google.com/file/d/1x9p2KAvtMcHmPCq-pL0oADeidFA-JCVc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1CzxNXFPJPq5O3yVl9M9Tshea3j0m-LFS/view?usp=sharing"
             className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20"
           >
             📄 My Resume ⇾
