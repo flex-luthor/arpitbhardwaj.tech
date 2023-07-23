@@ -1,6 +1,23 @@
 import Editor from "@/components/Editor";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    let image = document.getElementById("cursor");
+    document.addEventListener(
+      "mousemove",
+      function (e) {
+        var newX = e.clientX;
+        var newY = e.clientY;
+        if (image) {
+          image.style.left = newX + 1 + "px";
+          image.style.top = newY + 1 + "px";
+        }
+      },
+      false
+    );
+  }, []);
+
   return (
     <div className="flex flex-col items-center py-20 px-8 md:px-20">
       <div className="bg-gray-900/50 text-white w-full max-w-[800px] p-8 rounded-xl">
@@ -13,30 +30,31 @@ export default function Home() {
         <div className="grid grid-cols-2">
           <a
             href="https://drive.google.com/file/d/1CzxNXFPJPq5O3yVl9M9Tshea3j0m-LFS/view?usp=sharing"
-            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20"
+            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20 cursor-none"
           >
             📄 My Resume ⇾
           </a>
           <a
             href="https://www.linkedin.com/in/arpitbhardwajreact/"
-            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20"
+            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20 cursor-none"
           >
             🖇️ LinkedIn ⇾
           </a>
           <a
             href="https://twitter.com/ArpitBh30818912"
-            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20"
+            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20 cursor-none"
           >
             🐦 Twitter ⇾
           </a>
           <a
             href="https://github.com/flex-luthor"
-            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20"
+            className="text-blue-500 text-xl font-semibold p-4 m-2 border border-blue-500 rounded-xl flex justify-center hover:bg-blue-500/20 cursor-none"
           >
             👨‍💻 Github ⇾
           </a>
         </div>
       </div>
+      <img src="/cursor.png" id="cursor" className="absolute w-8 h-8 z-50" />
     </div>
   );
 }

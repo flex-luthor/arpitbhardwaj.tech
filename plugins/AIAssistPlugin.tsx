@@ -35,11 +35,7 @@ class AIAssistOption extends TypeaheadOption {
   }
 }
 
-const AICommands = [
-  "Write a blog post about ",
-  "Brainstorm ideas about ",
-  "Write an email about ",
-];
+const AICommands = ["Know more about me"];
 
 function AIMenuItem({
   index,

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  cursor: none;
+}
+
 .editor {
   background-color: #1f2937;
   padding-left: 12px;
@@ -28,16 +32,15 @@
   overflow: hidden;
   position: absolute;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  z-index: 100;
+  z-index: 10;
 }
 
 .item {
-  z-index: 100;
+  z-index: 10;
   width: 180px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 8px;
-  cursor: pointer;
 }
 
 .item-h1 {
@@ -84,19 +87,18 @@
   overflow: hidden;
   position: absolute;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  z-index: 100;
+  z-index: 10;
   display: flex;
   flex-direction: column;
 }
 
 .ai-item {
   display: flex;
-  z-index: 100;
+  z-index: 10;
   width: 250px;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 4px;
-  cursor: pointer;
 }
 
 .ai-item-icon {
