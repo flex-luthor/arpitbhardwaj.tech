@@ -5,7 +5,7 @@ import { Meta } from "./Meta";
 
 export const Layout = (props: PropsWithChildren) => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-800">
+    <div className="flex flex-col min-h-screen">
       <Meta />
       {props.children}
     </div>
