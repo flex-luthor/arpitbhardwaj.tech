@@ -10,11 +10,6 @@ export default function HeadingPlugin() {
   };
 
   return (
-    <input
-      className="heading"
-      value={"ARPIT BHARDWAJ"}
-      onKeyUp={handleKeyUp}
-      autoFocus={true}
-    />
+    <input className="heading" value={"ARPIT BHARDWAJ"} onKeyUp={handleKeyUp} />
   );
 }

@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  cursor: none;
-}
-
 .editor {
   background-color: #1f2937;
   padding-left: 12px;

@@ -2,22 +2,6 @@ import Editor from "@/components/Editor";
 import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    let image = document.getElementById("cursor");
-    document.addEventListener(
-      "mousemove",
-      function (e) {
-        var newX = e.clientX;
-        var newY = e.clientY;
-        if (image) {
-          image.style.left = newX + 1 + "px";
-          image.style.top = newY + 1 + "px";
-        }
-      },
-      false
-    );
-  }, []);
-
   return (
     <div className="flex flex-col items-center py-20 px-8 md:px-20">
       <div className="bg-gray-900/50 text-white w-full max-w-[800px] p-8 rounded-xl">
@@ -54,7 +38,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <img src="/cursor.png" id="cursor" className="absolute w-8 h-8 z-50" />
     </div>
   );
 }
